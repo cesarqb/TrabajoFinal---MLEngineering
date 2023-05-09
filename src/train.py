@@ -8,8 +8,8 @@ import pickle # importamos almacenador del modelo
 
 
 # Leemos la data procesada
-data_train = pd.read_csv('../src/data/processed/train_accept_credit.csv')
-data_val = pd.read_csv('../src/data/processed/valid_accept_credit.csv')
+data_train = pd.read_csv('../data/processed/train_accept_credit.csv')
+data_val = pd.read_csv('../data/processed/valid_accept_credit.csv')
 
 # Creamos una lista con las variables finales
 inputs = ['INGRESO_BRUTO', 'EDAD', 'NRO_PAS_PBK', 'EMP_REP_TC_SF',

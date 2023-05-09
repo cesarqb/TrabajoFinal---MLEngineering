@@ -7,7 +7,7 @@ import os
 
 # Cargar la tabla transformada
 def eval_model(filename):
-    df = pd.read_csv(os.path.join('./data/processed', filename)).set_index('ID')
+    df = pd.read_csv(os.path.join('../data/processed', filename)).set_index('ID')
     print(filename, ' cargado correctamente')
     # Leemos el modelo entrenado para usarlo
     package = '../models/credit_campaing_trabajo_final_GB.pkl'

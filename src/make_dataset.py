@@ -7,7 +7,7 @@ import os
 
 # Leemos los archivos csv
 def read_file_csv(filename):
-    df = pd.read_csv(os.path.join('./data/raw/', filename)).set_index('ID')
+    df = pd.read_csv(os.path.join('../data/raw', filename)).set_index('ID')
     print(filename, ' cargado correctamente')
     return df
 
@@ -123,7 +123,7 @@ def data_preparation(df):
 # Exportamos la matriz de datos con las columnas seleccionadas
 def data_exporting(df, features, filename):
     dfp = df[features]
-    dfp.to_csv(os.path.join('./data/processed/', filename))
+    dfp.to_csv(os.path.join('../data/processed', filename))
     print(filename, 'exportado correctamente en la carpeta processed')
 
 # Generamos las matrices de datos que se necesitan para la implementación

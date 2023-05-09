@@ -1,5 +1,10 @@
 TrabajoFinal---MLEngineering
 ==============================
+Integrantes:
+- Jack Cruz Mamani
+- Cesar Manuel Quezada Balcazae
+- Hugo Fernandez Quiroz
+- Walter Peña La Torre
 
 trabajo curso MLE
 

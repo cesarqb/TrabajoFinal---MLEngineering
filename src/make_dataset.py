@@ -163,7 +163,7 @@ def main():
        'TIPO_FLUJO_TC', 'SEXO', 'SIT_LAB', 'DEPARTAMENTO', 'FLG_SEGURO',
        'CLI_AHOCRED', 'CLI_CTS', 'CLI_FM', 'CLI_MILL', 'CLI_PLA', 'CLI_TXS',
        'EMP_REP_PP_PBK', 'EMP_REP_CONV_PBK', 'EMP_REP_VEH_PBK',
-       'EMP_REP_HIP_PBK', 'CLF_SBS', 'FLG_BANCARIZADO', 'TARGET_XF'],'score_accept_credit.csv')
+       'EMP_REP_HIP_PBK', 'CLF_SBS', 'FLG_BANCARIZADO'],'score_accept_credit.csv')
     
 if __name__ == "__main__":
     main()

@@ -7,14 +7,14 @@ import os
 
 # Cargar la tabla transformada
 def eval_model(filename):
-    df = pd.read_csv(os.path.join('../src/data/processed/', filename))
+    df = pd.read_csv(os.path.join('./data/processed', filename)).set_index('ID')
     print(filename, ' cargado correctamente')
     # Leemos el modelo entrenado para usarlo
     package = '../models/credit_campaing_trabajo_final_GB.pkl'
     model = pickle.load(open(package, 'rb'))
     print('Modelo importado correctamente')
     # Predecimos sobre el set de datos de validación 
-    X_test = df.drop(['TARGET_XF','Unnamed: 0'],axis=1)
+    X_test = df.drop(['TARGET_XF'],axis=1)
     y_test = df[['TARGET_XF']]
     y_pred_test=model.predict(X_test)
     # Generamos métricas de diagnóstico
